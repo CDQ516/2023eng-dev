@@ -1,0 +1,2 @@
+maggie_board_comm:maggie_joint_control
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/caodq/maggie_ws/devel -DCMAKE_INSTALL_PREFIX=/home/caodq/maggie_ws/install -G Unix Makefiles

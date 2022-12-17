@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -g -DNDEBUG  -shared -Wl,-soname,libmaggie_board_comm.so -o /home/caodq/maggie_ws/devel/lib/libmaggie_board_comm.so CMakeFiles/maggie_board_comm.dir/src/protocol.cpp.o CMakeFiles/maggie_board_comm.dir/src/comm.cpp.o 

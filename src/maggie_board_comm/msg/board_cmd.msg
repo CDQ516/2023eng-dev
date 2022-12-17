@@ -1,0 +1,4 @@
+bool isLeftLegOnline
+bool isRightLegOnline
+bool isRobotOnGround
+bool enableWheel

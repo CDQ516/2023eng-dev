@@ -1,0 +1,8 @@
+prefix=/home/caodq/maggie_ws/devel
+
+Name: maggie_board_comm
+Description: Description of maggie_board_comm
+Version: 0.0.0
+Cflags: -I/home/caodq/maggie_ws/devel/include -I/home/caodq/maggie_ws/src/maggie_board_comm/include
+Libs: -L${prefix}/lib -lmaggie_board_comm
+Requires: roscpp message_runtime std_msgs

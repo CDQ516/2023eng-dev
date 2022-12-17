@@ -1,0 +1,8 @@
+prefix=/home/caodq/maggie_ws/devel
+
+Name: maggie_joint_control
+Description: Description of maggie_joint_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
