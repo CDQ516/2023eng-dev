@@ -64,12 +64,6 @@ iostream
 protocol.h
 /home/caodq/maggie_ws/src/maggie_board_comm/include/maggie_board_comm/protocol.h
 
-/home/caodq/maggie_ws/src/maggie_board_comm/include/maggie_board_comm/crc.hpp
-stdint.h
-/home/caodq/maggie_ws/src/maggie_board_comm/include/maggie_board_comm/stdint.h
-stddef.h
-/home/caodq/maggie_ws/src/maggie_board_comm/include/maggie_board_comm/stddef.h
-
 /home/caodq/maggie_ws/src/maggie_board_comm/include/maggie_board_comm/maggie_board_comm_node.h
 unistd.h
 -
@@ -124,16 +118,6 @@ sensor_msgs/Imu.h
 geometry_msgs/Transform.h
 -
 tf/tf.h
--
-
-/home/caodq/maggie_ws/src/maggie_board_comm/src/protocol.cpp
-maggie_board_comm/protocol.h
-/home/caodq/maggie_ws/src/maggie_board_comm/src/maggie_board_comm/protocol.h
-maggie_board_comm/crc.hpp
-/home/caodq/maggie_ws/src/maggie_board_comm/src/maggie_board_comm/crc.hpp
-string.h
-/home/caodq/maggie_ws/src/maggie_board_comm/src/string.h
-sstream
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

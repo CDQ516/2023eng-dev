@@ -40,14 +40,16 @@ void Comm::open(const std::string &port)
         ser.setTimeout(timeout);
         ser.open();
         std::cout << "Open Serial Success!" << std::endl;
+        state = true;
     }
     catch (std::exception &e)
     {
         
         std::cout << "Open Serial Fail!" << e.what() << std::endl;
         scanf("%f", &gim_state.curr_pitch);
+        state = false;
     }
-    state = true;
+    
 }
 
 bool Comm::isOpen() const
@@ -68,16 +70,11 @@ bool Comm::transmit(float angle1, float angle2)
     }
 
     uint16_t len;
-    joint_angle_t msg;
-    data_u t[2];
+    joint_angle_t msg = {
+        .joint1 = angle1,
+        .joint2 = angle2
+    };
     
-    t[0].data=angle1;
-    t[1].data=angle2;
-    for(int i=0;i<2;i++)
-    {
-        for (int j = 0; j < 4; j++)
-            msg.joint[i * 4 + j] = t[i].data8[j];
-    }
 
     len = protocol_provider.pack(send, SOF, CMD_JOINT_ANGLE, (uint8_t *)&msg, sizeof(joint_angle_t));
     return ser.write(send, len);

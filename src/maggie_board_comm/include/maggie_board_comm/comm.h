@@ -52,12 +52,14 @@ typedef struct __attribute__((packed))
     float linear_acc[3];
 } imu_feedback_data_t;
 
+/****************upstream****************/
 #define CMD_JOINT_ANGLE 0x0502
 typedef struct __attribute__((packed))
 {
-    uint8_t joint[8]; //
+    float joint1; //
+    float joint2;
 } joint_angle_t;
-
+/****************************************/
 
 class Comm
 {
